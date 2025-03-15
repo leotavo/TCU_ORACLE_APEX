@@ -1,32 +1,33 @@
 # 📚 Declaração Completa de Escopo – Projeto Oracle APEX TCU
 
 ## 🎯 Objetivo do Projeto
-Desenvolver um sistema para registro, consulta e manutenção das informações referentes à admissão, aposentadoria e pensão de pessoal vinculado à administração pública federal, controlando atos previstos nos artigos 2º e 3º da IN Nº 55/2007.
+Desenvolver um sistema para registro, consulta e manutenção das informações referentes à admissão, aposentadoria e pensão de pessoal vinculado à administração pública federal, controlando atos previstos nos artigos 2º e 3º da IN Nº 55, de 24/10/2007.
 
-## 🧩 Requisitos Funcionais
-- CRUD completo: consulta, cadastro, alteração e exclusão
-- Histórico detalhado dos atos por servidor e órgão, com datas
+## 📌 Requisitos Funcionais
+- CRUD completo (consulta, cadastro, alteração e exclusão)
+- Histórico detalhado dos atos por servidor e órgão público, com datas de ocorrência
 - Separação visual (telas ou filtros específicos) dos atos sujeitos e não sujeitos a registro
-- Relatório com filtros: órgão público, tipo de ato e período de datas
-- Gráficos gerenciais: barras (quantidade de servidores por tipo de ato), pizza (proporção de atos sujeitos e não sujeitos), linha (evolução anual dos atos)
+- Relatório com filtros por órgão público, tipo de ato e intervalo de datas
+- Gráfico gerencial em barra totalizando a quantidade de servidores por cada tipo de ato
+- Gráfico gerencial em pizza informando proporção de atos sujeitos e não sujeitos a registro
+- Gráfico gerencial em linha mostrando a evolução anual dos atos
 
-## ⚙️ Requisitos Técnicos
-- Modelo de dados relacional normalizado (até a 3FN)
-- Dados fictícios realistas para testes práticos
-- Remoção final das tabelas e objetos não relevantes do banco de dados
+## 🛠️ Requisitos Técnicos
+- Implementação do modelo de dados normalizado (3FN)
+- Inserção de dados fictícios realistas para testes
+- Remoção das tabelas e objetos irrelevantes no banco de dados após conclusão
 
 ## 🚧 Requisitos Não Funcionais
-- Desenvolvimento individual na plataforma Oracle APEX versão 18.2 (ambiente do TCU)
+- Desenvolvimento individual no ambiente Oracle APEX versão 18.2 disponibilizado pelo TCU
 - Compatibilidade com navegadores: Google Chrome, Mozilla Firefox, Apple Safari, Microsoft Edge
-- Prazo de entrega: até meio-dia do dia 20 de março
-- Desempenho aceitável e adequado para consultas, geração de relatórios e gráficos para este tipo de aplicação
-- Espaço de Trabalho limitado a 10MB aprovado pelo TCU
-- Validação básica dos dados inseridos (campos obrigatórios, formato de datas, CPF)
+- Prazo máximo para entrega: 20 de março até meio-dia
+- Desempenho aceitável para aplicações do tipo proposto (consultas e relatórios rápidos)
+- Limitação do espaço de trabalho aprovado pelo TCU: 10MB
 - Interface intuitiva e amigável (boa usabilidade)
 
 ## 🚫 Exclusões do Escopo
-- Não serão desenvolvidas integrações externas ou serviços de autenticação personalizados
-- Não serão implementadas funcionalidades avançadas de segurança além das oferecidas pelo Oracle APEX
+- Integrações externas ou uso de APIs
+- Funcionalidades avançadas de segurança não nativas do Oracle APEX
 
 ## 🔍 Critérios de Aceitação e Validação do Projeto
 
@@ -48,8 +49,44 @@ Além disso, será verificada a limpeza do banco de dados, garantindo que perman
 | Limpeza do banco final                        | Exclusão de tabelas e objetos irrelevantes pós-desenvolvimento |
 | Compatibilidade navegadores                   | Teste e validação completa nos navegadores definidos |
 | Desempenho aceitável                          | Respostas rápidas e adequadas em todas as consultas e relatórios |
-| Validações básicas                            | Implementação de validações de campos obrigatórios, formatos corretos de datas e CPF |
+| Validações básicas e integridade dos dados    | Implementação de validações de campos obrigatórios, formatos corretos de datas e CPF |
 | Usabilidade da interface                      | Interface clara, intuitiva e amigável validada durante testes práticos |
+
+## 🔧 Estrutura Analítica do Projeto (EAP)
+
+### 1. Configuração do Ambiente
+- 1.1 Solicitação e configuração do espaço de trabalho no ambiente do TCU
+- 1.2 Validação e teste de acesso ao Oracle APEX
+
+### 2. Modelagem de Dados
+- 2.1 Definição das tabelas essenciais
+- 2.2 Criação dos relacionamentos e restrições (normalização 3FN)
+
+### 3. Desenvolvimento dos CRUDs
+- 3.1 CRUD para órgãos públicos
+- 3.2 CRUD para servidores públicos
+- 3.3 CRUD para atos administrativos
+
+### 4. Desenvolvimento dos Relatórios
+- 4.1 Relatório com filtros por órgão público, tipo de ato e intervalo de datas
+- 4.2 Exportação dos relatórios em PDF e Excel
+
+### 5. Desenvolvimento dos Gráficos Gerenciais
+- 5.1 Gráfico de barras (quantidade de servidores por tipo de ato)
+- 5.2 Gráfico de pizza (proporção atos sujeitos e não sujeitos)
+- 5.3 Gráfico de linha (evolução anual dos atos)
+
+### 6. Testes e Validações
+- 6.1 Inserção de dados fictícios para testes
+- 6.2 Testes funcionais das operações CRUD
+- 6.3 Testes dos relatórios e gráficos
+- 6.4 Validação de desempenho (tempo de resposta)
+- 6.2 Validação de usabilidade e responsividade
+
+### 7. Finalização e Entrega
+- 7.1 Remoção de objetos irrelevantes no banco de dados
+- 7.2 Disponibilização da aplicação para avaliação direta no ambiente TCU
+- 7.3 Preparação da apresentação do projeto para entrevista técnica
 
 ---
 
