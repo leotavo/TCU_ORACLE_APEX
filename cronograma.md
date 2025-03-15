@@ -38,4 +38,8 @@
 | 7.1 | | Remoção de objetos irrelevantes no banco | | | | | Não Iniciado |
 | 7.1.1 | | | Identificar objetos desnecessários | 19/03/2025 09:00 | 19/03/2025 10:00 | 1h | Não Iniciado |
 | 7.1.2 | | | Excluir objetos e validar limpeza | 19/03/2025 10:00 | 19/03/2025 11:00 | 1h | Não Iniciado |
+| 7.2 | | Disponibilização da aplicação no ambiente TCU | | | | | Não Iniciado |
+| 7.2.1 | | | Garantir acessibilidade e disponibilidade | 19/03/2025 12:00 | 19/03/2025 13:00 | 1h |
+| 7.3 | | Preparação da apresentação técnica | | | | | | Não iniciada |
+| 7.3.1 | | | Organizar roteiro e evidências | 19/03/2025 15:00 | 19/03/2025 16:00 | 1h |
 
