@@ -81,7 +81,7 @@ Além disso, será verificada a limpeza do banco de dados, garantindo que perman
 - 6.2 Testes funcionais das operações CRUD
 - 6.3 Testes dos relatórios e gráficos
 - 6.4 Validação de desempenho (tempo de resposta)
-- 6.2 Validação de usabilidade e responsividade
+- 6.5 Validação de usabilidade e responsividade
 
 ### 7. Finalização e Entrega
 - 7.1 Remoção de objetos irrelevantes no banco de dados
